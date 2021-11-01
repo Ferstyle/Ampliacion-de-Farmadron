@@ -2,7 +2,7 @@
 * NOMBRE: #Fernando#
 * PRIMER APELLIDO: #Garcia-Mascaraque#
 * SEGUNDO APELLIDO: #Santillana#
-* DNI: #50878079#
+* DNI: 
 * EMAIL: #fergms1988@gmail.com#
 *******************************************/
 
@@ -35,14 +35,14 @@ float calculos(float distanciaA, float anguloA, float distanciaB, float anguloB,
   anguloAB =  anguloAB * 180 / 3.1416;
 
 
-  /* Cálculo de distancia entre dos paciente; operación = 1 */
+  /* CÃ¡lculo de distancia entre dos paciente; operaciÃ³n = 1 */
 
   if (operacion == 1) {
     distaAB = sqrt(pow((xB-xA),2) + pow((yB - yA),2));
     return distaAB;
   };
 
-  /* Cálculo del angulo  entre dos puntos; operación = 2*/
+  /* CÃ¡lculo del angulo  entre dos puntos; operaciÃ³n = 2*/
 
   if (operacion == 2) {
     if ( pendiente < 0) {
@@ -54,7 +54,7 @@ float calculos(float distanciaA, float anguloA, float distanciaB, float anguloB,
     return anguloAB ;
   };
 
-  /* Cálculo del angulo final desde la ultima entrega al almacen; operación = 3 */
+  /* CÃ¡lculo del angulo final desde la ultima entrega al almacen; operaciÃ³n = 3 */
 
   if (operacion == 3) {
     if (anguloA >= 0 && anguloA <= 500) {
