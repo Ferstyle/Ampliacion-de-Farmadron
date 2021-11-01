@@ -2,7 +2,7 @@
 * NOMBRE: #Fernando#
 * PRIMER APELLIDO: #Garcia-Mascaraque#
 * SEGUNDO APELLIDO: #Santillana#
-* DNI: #50878079#
+* DNI: 
 * EMAIL: #fergms1988@gmail.com#
 *******************************************/
 
@@ -105,7 +105,7 @@ void AltaNewPedido(dataPedido alb, dataDepot depot ) {
         scanf( " %d" , &dron[numRef].KmH ) ;
         maxKmH=dron[numRef].KmH;
         if (maxKmH < 0 || maxKmH > 100000 ) {
-          printf( "\n Excede el máximo de Km horizontales permitido\n");
+          printf( "\n Excede el mÃ¡ximo de Km horizontales permitido\n");
         };
 
       } while (  maxKmH < 0 || maxKmH > 100000 ) ;
@@ -156,7 +156,7 @@ void AltaNewPedido(dataPedido alb, dataDepot depot ) {
   }
 }
 
-/*  Busca el último registro dron en el almacen para la numeración   */
+/*  Busca el Ãºltimo registro dron en el almacen para la numeraciÃ³n   */
 
 int BuscaReg( int & numregistro, int numalmacen, dataPedido pedido) {
   int indice = 0 ;
