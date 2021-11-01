@@ -2,7 +2,7 @@
 * NOMBRE: #Fernando#
 * PRIMER APELLIDO: #Garcia-Mascaraque#
 * SEGUNDO APELLIDO: #Santillana#
-* DNI: #50878079#
+* DNI: 
 * EMAIL: #fergms1988@gmail.com#
 *******************************************/
 
@@ -35,12 +35,12 @@ typedef int TipoDiasConPedidos[31];
 TipoDiasConPedidos DiasConPedidos;
 
 
-/* -- Busca el último registro de pedido del vector para la numeración  --  */
+/* -- Busca el Ãºltimo registro de pedido del vector para la numeraciÃ³n  --  */
 
 int TipoGestion::BuscarPedido( int & buscareg) {
   int ind0 = 0 ;
 
-  while ( ind0 <= 100) {   /* Recorro toda el vector hasta encontrar el último pedido */
+  while ( ind0 <= 100) {   /* Recorro toda el vector hasta encontrar el Ãºltimo pedido */
 
 
     if (datoPedido[ind0].regPedido == (ind0 + 1)) {
@@ -58,7 +58,7 @@ int TipoGestion::BuscarPedido( int & buscareg) {
 }
 
 
-/*  Busca el último número de pedido del vector para la numeración   */
+/*  Busca el Ãºltimo nÃºmero de pedido del vector para la numeraciÃ³n   */
 
 int TipoGestion::NumPedido( int & numberPedido) {
   int ind0 = 0 ;
@@ -76,11 +76,11 @@ int TipoGestion::NumPedido( int & numberPedido) {
   return( numberPedido ) ;
 }
 
-/*  Funcion para detectar si la fecha es correcta de acuerdo con los formatos y día/mes/año     */
+/*  Funcion para detectar si la fecha es correcta de acuerdo con los formatos y dÃ­a/mes/aÃ±o     */
 
 int TipoGestion::FechaAcertada(int & newDia, int newMes, int newAnio) {
 
-  // Función para calcular el número de días de cada mes y  en función del año bisiesto
+  // FunciÃ³n para calcular el nÃºmero de dÃ­as de cada mes y  en funciÃ³n del aÃ±o bisiesto
 
   switch (newMes) {
   case 1:
@@ -116,7 +116,7 @@ int TipoGestion::FechaAcertada(int & newDia, int newMes, int newAnio) {
 
 void TipoGestion::FechasEnvio( int contEnvios ) {
 
-  /* Función para introducir y controlar los errores de tecla del usuario y que las fechas tengan los formatos correctos */
+  /* FunciÃ³n para introducir y controlar los errores de tecla del usuario y que las fechas tengan los formatos correctos */
 
   int dia2, mes2, anio2, newDia, newMes, newAnio, frecuencia, ind0, ind1, ind2, auxdron;
   bool pruebaFecha = true;
